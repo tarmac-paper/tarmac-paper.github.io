@@ -732,6 +732,84 @@ a:focus {
 }
 
 
+/* Experiment Slideshow */
+.experiment-slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.slide-container {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius-lg);
+}
+
+.slide-arrow {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.slide-arrow:hover {
+  color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Overview slideshow */
+.overview-slideshow {
+  position: relative;
+}
+
+.overview-slide {
+  display: none;
+}
+
+.overview-slide.active {
+  display: block;
+}
+
+.overview-slide video,
+.overview-slide img {
+  width: 100%;
+  height: auto;
+}
+
 /* Print styles */
 @media print {
   .more-works-container {

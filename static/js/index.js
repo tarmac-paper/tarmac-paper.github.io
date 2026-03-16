@@ -119,6 +119,75 @@ function setupVideoCarouselAutoplay() {
     });
 }
 
+// Experiment slideshow
+var currentSlide = 0;
+var totalSlides = 3;
+
+function changeSlide(direction) {
+    goToSlide(currentSlide + direction);
+}
+
+function goToSlide(index) {
+    var slides = document.querySelectorAll('.slide');
+    if (slides.length === 0) return;
+
+    var activeVideo = slides[currentSlide].querySelector('video');
+    if (activeVideo) activeVideo.pause();
+
+    currentSlide = ((index % totalSlides) + totalSlides) % totalSlides;
+
+    slides.forEach(function(s) { s.classList.remove('active'); });
+    slides[currentSlide].classList.add('active');
+
+    var newVideo = slides[currentSlide].querySelector('video');
+    if (newVideo) {
+        newVideo.currentTime = 0;
+        newVideo.play().catch(function() {});
+    }
+}
+
+function setupSlideAutoAdvance() {
+    var slides = document.querySelectorAll('.slide');
+    slides.forEach(function(slide) {
+        var video = slide.querySelector('video');
+        if (video) {
+            video.loop = false;
+            video.addEventListener('ended', function() {
+                changeSlide(1);
+            });
+        }
+    });
+}
+
+var currentOverviewSlide = 0;
+
+function changeOverviewSlide(direction) {
+    var slides = document.querySelectorAll('.overview-slide');
+    if (slides.length === 0) return;
+
+    var activeVideo = slides[currentOverviewSlide].querySelector('video');
+    if (activeVideo) activeVideo.pause();
+
+    currentOverviewSlide = ((currentOverviewSlide + direction) % 2 + 2) % 2;
+
+    slides.forEach(function(s) { s.classList.remove('active'); });
+    slides[currentOverviewSlide].classList.add('active');
+
+    var newVideo = slides[currentOverviewSlide].querySelector('video');
+    if (newVideo) {
+        newVideo.currentTime = 0;
+        newVideo.play().catch(function() {});
+    }
+}
+
+function setupOverviewAutoAdvance() {
+    var video = document.querySelector('.overview-slide[data-overview="0"] video');
+    if (!video) return;
+    video.addEventListener('ended', function() {
+        changeOverviewSlide(1);
+    });
+}
+
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
@@ -138,5 +207,7 @@ $(document).ready(function() {
     
     // Setup video autoplay for carousel
     setupVideoCarouselAutoplay();
+    setupSlideAutoAdvance();
+    setupOverviewAutoAdvance();
 
 })
