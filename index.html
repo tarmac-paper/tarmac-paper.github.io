@@ -14,7 +14,7 @@
   <meta name="author"
     content="Kefeng Huang, Alice E. Martin, Jonathon Pipe, Tianyuan Wang, Barnabas A. Franklin, Chris Horbaczewskyj, Andy M. Tyrrell, Ian J. S. Fairlamb, Jihong Zhu">
   <meta name="language" content="English">
-  <meta name="theme-color" content="#153243">
+  <meta name="theme-color" content="#ffffff">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="University of York">
@@ -22,9 +22,8 @@
   <meta property="og:description"
     content="An empirical action-level taxonomy for describing, comparing, and reusing physical manipulation primitives in chemistry laboratories.">
   <meta property="og:url" content="https://tarmac-paper.github.io/">
-  <meta property="og:image" content="https://tarmac-paper.github.io/static/images/cover.jpg">
-  <meta property="og:image:alt" content="Bimanual robot assembling laboratory apparatus for TARMAC validation">
-  <meta property="article:published_time" content="2026-05-16T00:00:00.000Z">
+  <meta property="og:image" content="https://tarmac-paper.github.io/static/images/tarmac.jpg">
+  <meta property="og:image:alt" content="Overview diagram of the TARMAC taxonomy for chemistry manipulation">
   <meta property="article:author" content="Kefeng Huang">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="laboratory automation">
@@ -34,8 +33,8 @@
   <meta name="twitter:title" content="TARMAC: A Taxonomy for Robot Manipulation in Chemistry">
   <meta name="twitter:description"
     content="An empirical action-level taxonomy for chemistry laboratory manipulation and robotic executability.">
-  <meta name="twitter:image" content="https://tarmac-paper.github.io/static/images/cover.jpg">
-  <meta name="twitter:image:alt" content="Bimanual robot assembling laboratory apparatus for TARMAC validation">
+  <meta name="twitter:image" content="https://tarmac-paper.github.io/static/images/tarmac.jpg">
+  <meta name="twitter:image:alt" content="Overview diagram of the TARMAC taxonomy for chemistry manipulation">
 
   <meta name="citation_title" content="TARMAC: A Taxonomy for Robot Manipulation in Chemistry">
   <meta name="citation_author" content="Huang, Kefeng">
@@ -48,7 +47,6 @@
   <meta name="citation_author" content="Fairlamb, Ian J. S.">
   <meta name="citation_author" content="Zhu, Jihong">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_journal_title" content="Communications Chemistry, under review">
   <meta name="citation_pdf_url" content="https://tarmac-paper.github.io/static/pdfs/tarmac_paper.pdf">
 
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -74,13 +72,12 @@
       {"@type": "Person", "name": "Ian J. S. Fairlamb"},
       {"@type": "Person", "name": "Jihong Zhu"}
     ],
-    "datePublished": "2026-05-16",
     "publisher": {
       "@type": "Organization",
       "name": "University of York"
     },
     "url": "https://tarmac-paper.github.io/",
-    "image": "https://tarmac-paper.github.io/static/images/cover.jpg",
+    "image": "https://tarmac-paper.github.io/static/images/tarmac.jpg",
     "keywords": ["laboratory automation", "robot manipulation", "chemistry robotics", "action taxonomy"],
     "isAccessibleForFree": true
   }
@@ -93,117 +90,82 @@
   </button>
 
   <main id="main-content">
-    <section class="hero-section">
-      <div class="hero-media">
-        <img src="static/images/cover.jpg"
-          alt="Bimanual Franka robot assembling a separating-funnel apparatus in a laboratory workspace">
+    <header class="paper-header">
+      <p class="venue-line">University of York</p>
+      <h1>TARMAC: A Taxonomy for Robot Manipulation in Chemistry</h1>
+      <p class="paper-summary">
+        An empirical action-level taxonomy for describing, comparing, and reusing physical manipulation primitives in
+        chemistry laboratories.
+      </p>
+
+      <div class="author-list">
+        <span>Kefeng Huang</span>
+        <span>Alice E. Martin</span>
+        <span>Jonathon Pipe</span>
+        <span>Tianyuan Wang</span>
+        <span>Barnabas A. Franklin</span>
+        <span>Chris Horbaczewskyj</span>
+        <span>Andy M. Tyrrell</span>
+        <span>Ian J. S. Fairlamb</span>
+        <span>Jihong Zhu</span>
       </div>
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <p class="eyebrow">Revised manuscript under review</p>
-          <h1>TARMAC: A Taxonomy for Robot Manipulation in Chemistry</h1>
-          <p class="hero-summary">
-            An empirical action-level map of laboratory manipulation, organizing setup, execution, adjustment, and
-            cleanup actions into reusable physical primitives for robotic systems.
-          </p>
-          <div class="author-list">
-            <span>Kefeng Huang</span>
-            <span>Alice E. Martin</span>
-            <span>Jonathon Pipe</span>
-            <span>Tianyuan Wang</span>
-            <span>Barnabas A. Franklin</span>
-            <span>Chris Horbaczewskyj</span>
-            <span>Andy M. Tyrrell</span>
-            <span>Ian J. S. Fairlamb</span>
-            <span>Jihong Zhu</span>
-          </div>
-          <p class="affiliation">University of York</p>
-          <div class="resource-actions" aria-label="Primary project links">
-            <a class="resource-button" href="static/pdfs/tarmac_paper.pdf" target="_blank" rel="noopener">
-              <i class="fas fa-file-pdf" aria-hidden="true"></i>
-              <span>Paper</span>
-            </a>
-            <a class="resource-button" href="static/pdfs/tarmac_supplementary.pdf" target="_blank" rel="noopener">
-              <i class="fas fa-file-alt" aria-hidden="true"></i>
-              <span>Supplementary</span>
-            </a>
-            <a class="resource-button" href="#data-code">
-              <i class="fas fa-database" aria-hidden="true"></i>
-              <span>Dataset</span>
-            </a>
-            <a class="resource-button" href="https://github.com/kefhuang/tarmac" target="_blank" rel="noopener">
-              <i class="fas fa-code" aria-hidden="true"></i>
-              <span>Code</span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <p class="affiliation">
+        School of Physics, Engineering and Technology &amp; Department of Chemistry, University of York
+      </p>
+
+      <nav class="resource-actions" aria-label="Primary project links">
+        <a class="resource-button" href="static/pdfs/tarmac_paper.pdf" target="_blank" rel="noopener">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span>Paper</span>
+        </a>
+        <a class="resource-button" href="static/pdfs/tarmac_supplementary.pdf" target="_blank" rel="noopener">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+          <span>Supplementary</span>
+        </a>
+        <a class="resource-button" href="#data-code">
+          <i class="fas fa-database" aria-hidden="true"></i>
+          <span>Data</span>
+        </a>
+        <a class="resource-button" href="https://github.com/kefhuang/tarmac" target="_blank" rel="noopener">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <span>Code</span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="section-block teaser-section" aria-label="TARMAC overview figure">
+      <figure class="teaser-figure">
+        <img src="static/images/tarmac.jpg?v=20260516"
+          alt="Overview diagram showing TARMAC categories and robotic demonstration pipeline">
+        <figcaption>
+          TARMAC organizes observed chemistry laboratory manipulations into Positioning, Coupling, Tooling, and
+          Agitating primitives, then uses that shared vocabulary to support robotic instantiation.
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="section-block media-first" id="demos">
+    <section class="section-block abstract-section" id="abstract">
       <div class="section-heading">
-        <p class="eyebrow">Robotic demonstrations</p>
-        <h2>Representative primitives across the laboratory lifecycle</h2>
+        <p class="eyebrow">Abstract</p>
+        <h2>Overview</h2>
+      </div>
+      <div class="abstract-text">
         <p>
-          The revised validation treats these experiments as executability evidence for the action representation, not
-          as benchmarks of any single robot. The demonstrations span transfer, agitation, setup, recovery, embodiment
-          transfer, and cleanup.
+          Laboratory automation has made well-defined experimental protocols increasingly executable by machines, yet the
+          physical manipulations surrounding those protocols remain difficult to generalize. Setup, transfer, adjustment,
+          assembly, and cleanup operations form a long tail of context-dependent actions that are typically handled
+          manually or implemented as bespoke robotic skills for individual workflows and platforms.
         </p>
-      </div>
-      <div class="video-grid">
-        <article class="media-card feature-card">
-          <video controls muted preload="metadata" poster="static/images/robotic-validation/franka_single_arm.png">
-            <source src="static/videos/experiment1.mp4" type="video/mp4">
-          </video>
-          <div>
-            <h3>Single-arm execution</h3>
-            <p>Initial Franka validation of Tooling and Agitating primitives such as pouring, stirring, and shaking.</p>
-          </div>
-        </article>
-        <article class="media-card feature-card">
-          <video controls muted preload="metadata" poster="static/images/robotic-validation/dobot_insert_stir_bar.jpg">
-            <source src="static/videos/experiment2.mp4" type="video/mp4">
-          </video>
-          <div>
-            <h3>Second embodiment</h3>
-            <p>Dobot solution preparation spanning setup, execution, and cleanup with Positioning, Tooling, and
-              Agitating primitives.</p>
-          </div>
-        </article>
-        <article class="media-card feature-card">
-          <video controls muted preload="metadata" poster="static/images/robotic-validation/bimanual_screwing.jpg">
-            <source src="static/videos/experiment3.mp4" type="video/mp4">
-          </video>
-          <div>
-            <h3>Bimanual setup</h3>
-            <p>Two Franka arms assemble a separating-funnel apparatus and recover from intermediate misalignment by
-              recomposing existing primitives.</p>
-          </div>
-        </article>
-        <article class="media-card feature-card">
-          <div class="media-pair" aria-label="Perception-guided cleanup frames">
-            <img src="static/images/robotic-validation/broken_detection.png"
-              alt="Object detection output for broken glass fragments">
-            <img src="static/images/robotic-validation/broken_remove_fragment.jpg"
-              alt="Robot removing a broken glass fragment">
-          </div>
-          <div>
-            <h3>Perception-guided cleanup</h3>
-            <p>A wrist-mounted depth camera localizes broken glass fragments while Positioning primitives execute the
-              removal actions.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="thesis-band">
-      <div class="section-heading compact">
-        <p class="eyebrow">Central claim</p>
-        <h2>Laboratory manipulation has reusable physical structure.</h2>
         <p>
-          TARMAC is not a closed protocol language or a robot controller. It is an empirical action-level taxonomy that
-          describes recurring laboratory manipulations through physically grounded distinctions, making setup, transfer,
-          assembly, adjustment, and cleanup comparable across workflows and robotic embodiments.
+          TARMAC is an empirical taxonomy of laboratory actions grounded in the analysis of instructional chemistry
+          practice. Rather than prescribing a control framework, it emerges from a bottom-up decomposition of real
+          laboratory manipulations into physically meaningful primitives organized by wrench dependence, actuation
+          directness, and motion periodicity.
+        </p>
+        <p>
+          Across the experimental contexts examined, the majority of actions can be expressed as compositions of a finite
+          and reusable set of primitives. This structure provides a basis for organizing, comparing, and reusing
+          manipulation capabilities across experimental workflows.
         </p>
       </div>
     </section>
@@ -211,20 +173,13 @@
     <section class="section-block" id="taxonomy">
       <div class="section-heading">
         <p class="eyebrow">Taxonomy</p>
-        <h2>Three physical dimensions, four categories, eighteen primitives</h2>
+        <h2>Three dimensions, four categories, eighteen primitives</h2>
         <p>
           Laboratory actions in the source corpus are organized by wrench dependence, actuation directness, and motion
           periodicity. These dimensions produce four high-level categories that decompose into action-level primitives.
         </p>
       </div>
-      <figure class="wide-figure">
-        <img src="static/images/tarmac.jpg"
-          alt="Overview diagram showing TARMAC categories and robotic demonstration pipeline">
-        <figcaption>
-          TARMAC organizes observed laboratory manipulations into Positioning, Coupling, Tooling, and Agitating
-          primitives, then uses those primitives as a shared action vocabulary for robotic instantiation.
-        </figcaption>
-      </figure>
+
       <div class="dimension-grid">
         <article>
           <span>Dimension 1</span>
@@ -239,10 +194,10 @@
         <article>
           <span>Dimension 3</span>
           <h3>Motion periodicity</h3>
-          <p>Distinguishes finite one-off actions from cyclic or sustained actions whose outcomes accumulate over time.
-          </p>
+          <p>Distinguishes finite one-off actions from cyclic or sustained actions whose outcomes accumulate over time.</p>
         </article>
       </div>
+
       <div class="primitive-grid" aria-label="TARMAC primitive groups">
         <article class="primitive-card positioning">
           <h3>Positioning</h3>
@@ -294,39 +249,75 @@
         <p class="eyebrow">Validation</p>
         <h2>Specification adequacy, expressive coverage, and executability</h2>
         <p>
-          The revised paper separates three questions: whether the written taxonomy is operational, whether the
-          primitive set covers written chemistry procedures, and whether representative primitives can be instantiated
-          on robotic platforms.
+          The paper evaluates whether the written taxonomy is operational, whether the primitive set covers written
+          chemistry procedures, and whether representative primitives can be instantiated on robotic platforms.
         </p>
       </div>
-      <div class="metric-grid">
-        <article class="metric-card">
-          <span class="metric-value">562</span>
-          <h3>Annotated actions</h3>
-          <p>Rule-following classification on the derivation corpus reached 86.7% concordance and macro-F1 0.84 with
-            full workflow context.</p>
-        </article>
-        <article class="metric-card">
-          <span class="metric-value">98.6%</span>
-          <h3>Cross-corpus coverage</h3>
-          <p>904 of 917 manipulative steps from 23 procedures across four papers mapped to existing TARMAC primitives.
-          </p>
-        </article>
-        <article class="metric-card">
-          <span class="metric-value">4 x 5</span>
-          <h3>Robotic validation</h3>
-          <p>Four robotic configurations and five tasks exercised eight primitives across all four high-level
-            categories.</p>
-        </article>
-      </div>
-      <figure class="wide-figure data-figure">
+
+      <dl class="metric-list">
+        <div>
+          <dt>562 annotated actions</dt>
+          <dd>Rule-following classification reached 86.7% concordance and macro-F1 0.84 with full workflow context.</dd>
+        </div>
+        <div>
+          <dt>98.6% cross-corpus coverage</dt>
+          <dd>904 of 917 manipulative steps from 23 procedures across four papers mapped to existing TARMAC primitives.</dd>
+        </div>
+        <div>
+          <dt>4 configurations, 5 robotic tasks</dt>
+          <dd>Representative experiments exercised eight primitives across all four high-level categories.</dd>
+        </div>
+      </dl>
+
+      <figure class="supporting-figure">
         <img src="static/images/coverage_matrix.png"
           alt="Cross-corpus coverage matrix showing TARMAC primitive assignments across four chemistry papers">
         <figcaption>
-          Cross-corpus decomposition of 23 procedures shows that different chemistry domains draw from distinct
-          sub-vocabularies while sharing the same primitive alphabet.
+          Cross-corpus decomposition shows that different chemistry domains draw from distinct sub-vocabularies while
+          sharing the same primitive alphabet.
         </figcaption>
       </figure>
+    </section>
+
+    <section class="section-block" id="demos">
+      <div class="section-heading">
+        <p class="eyebrow">Robotic demonstrations</p>
+        <h2>Representative primitive instantiations</h2>
+        <p>
+          The demonstrations span transfer, agitation, setup, recovery, embodiment transfer, and cleanup. They are
+          presented as evidence for the action representation rather than benchmarks of a single robot platform.
+        </p>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card">
+          <video controls muted preload="metadata" poster="static/images/robotic-validation/franka_single_arm.png">
+            <source src="static/videos/experiment1.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3>Single-arm execution</h3>
+            <p>Franka validation of Tooling and Agitating primitives such as pouring, stirring, and shaking.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <video controls muted preload="metadata" poster="static/images/robotic-validation/dobot_insert_stir_bar.jpg">
+            <source src="static/videos/experiment2.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3>Second embodiment</h3>
+            <p>Dobot solution preparation spanning setup, execution, and cleanup.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <video controls muted preload="metadata" poster="static/images/robotic-validation/bimanual_screwing.jpg">
+            <source src="static/videos/experiment3.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3>Bimanual setup</h3>
+            <p>Two Franka arms assemble a separating-funnel apparatus and recover from intermediate misalignment.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="section-block" id="dataset">
@@ -334,11 +325,12 @@
         <p class="eyebrow">Dataset examples</p>
         <h2>Advanced laboratory procedures represented as primitive sequences</h2>
         <p>
-          The source corpus contains 91 instructional chemistry videos and 562 annotated manipulation segments. These
-          examples illustrate air-sensitive handling, chromatography, reduced-pressure distillation, and NMR sample
-          preparation.
+          The source corpus contains 91 instructional chemistry videos and 562 annotated manipulation segments. The
+          examples below illustrate air-sensitive handling, chromatography, reduced-pressure distillation, and NMR
+          sample preparation.
         </p>
       </div>
+
       <div class="gallery-grid">
         <article class="gallery-card">
           <div class="gallery-images">
@@ -373,20 +365,15 @@
             <img src="static/images/dataset-examples/nmr_wipe_tube.jpg" alt="Wiping an NMR tube">
           </div>
           <h3>NMR sample preparation</h3>
-          <p>Scooping, Squirting, Pouring, Coupling, Wiping, and Positioning cover weighing, dissolving, and labeling.
-          </p>
+          <p>Scooping, Squirting, Pouring, Coupling, Wiping, and Positioning cover weighing, dissolving, and labeling.</p>
         </article>
       </div>
     </section>
 
     <section class="section-block robotic-frames">
       <div class="section-heading">
-        <p class="eyebrow">Robotic evidence</p>
-        <h2>Frames from the expanded validation experiments</h2>
-        <p>
-          The revised manuscript adds cross-embodiment transfer, bimanual setup with recovery, and perception-guided
-          cleanup, expanding the demonstrated primitive coverage from three to eight of the eighteen primitives.
-        </p>
+        <p class="eyebrow">Additional frames</p>
+        <h2>Robotic validation snapshots</h2>
       </div>
       <div class="frame-strip">
         <figure>
@@ -420,44 +407,26 @@
       </div>
     </section>
 
-    <section class="section-block abstract-section" id="abstract">
-      <div class="section-heading compact">
-        <p class="eyebrow">Abstract</p>
-        <h2>Revised manuscript summary</h2>
-      </div>
-      <div class="abstract-text">
-        <p>
-          Laboratory automation has made well-defined experimental protocols increasingly executable by machines, yet the
-          physical manipulations surrounding those protocols remain difficult to generalize. Setup, transfer, adjustment,
-          assembly, and cleanup operations form a long tail of context-dependent actions that are typically handled
-          manually or implemented as bespoke robotic skills for individual workflows and platforms.
-        </p>
-        <p>
-          TARMAC is an empirical taxonomy of laboratory actions grounded in the analysis of instructional chemistry
-          practice. Rather than prescribing a control framework, it emerges from a bottom-up decomposition of real
-          laboratory manipulations into physically meaningful primitives organized by wrench dependence, actuation
-          directness, and motion periodicity.
-        </p>
-        <p>
-          The results show that laboratory manipulation is intrinsically structured: across the experimental contexts
-          examined, the vast majority of actions can be expressed as compositions of a finite and reusable set of
-          primitives. This structure provides a basis for organizing, comparing, and reusing manipulation capabilities
-          across experimental workflows.
-        </p>
-      </div>
-    </section>
-
     <section class="section-block data-code" id="data-code">
       <div class="section-heading">
         <p class="eyebrow">Resources</p>
         <h2>Paper, data, and code availability</h2>
         <p>
-          The revised paper and supplementary information are available above. Lightweight public data artifacts are
-          linked below; the full source-video archive and per-procedure decomposition outputs should be connected here
-          when the final dataset package is available.
+          The paper, supplementary information, lightweight public data artifacts, and robotic control code are linked
+          below. The full source-video archive and per-procedure decomposition outputs can be added here when the public
+          dataset package is available.
         </p>
       </div>
+
       <div class="resource-grid">
+        <a class="resource-tile" href="static/pdfs/tarmac_paper.pdf" target="_blank" rel="noopener">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          <span>Paper PDF</span>
+        </a>
+        <a class="resource-tile" href="static/pdfs/tarmac_supplementary.pdf" target="_blank" rel="noopener">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+          <span>Supplementary PDF</span>
+        </a>
         <a class="resource-tile" href="static/data/video_labels.csv" target="_blank" rel="noopener">
           <i class="fas fa-table" aria-hidden="true"></i>
           <span>Video annotation CSV</span>
@@ -471,6 +440,7 @@
           <span>Robotic control code</span>
         </a>
       </div>
+
       <div class="bibtex-panel" id="bibtex">
         <div class="bibtex-header">
           <h3>BibTeX</h3>
@@ -483,7 +453,6 @@
   title = {TARMAC: A Taxonomy for Robot Manipulation in Chemistry},
   author = {Huang, Kefeng and Martin, Alice E. and Pipe, Jonathon and Wang, Tianyuan and Franklin, Barnabas A. and Horbaczewskyj, Chris and Tyrrell, Andy M. and Fairlamb, Ian J. S. and Zhu, Jihong},
   year = {2026},
-  note = {Manuscript under review},
   url = {https://tarmac-paper.github.io/}
 }</code></pre>
       </div>
@@ -491,12 +460,9 @@
   </main>
 
   <footer class="site-footer">
-    <div>
-      <p>
-        Built for the TARMAC project at the University of York. This page uses the Academic Project Page Template as a
-        starting point and includes project media from the revised manuscript and supplementary information.
-      </p>
-    </div>
+    <p>
+      TARMAC project page, University of York.
+    </p>
   </footer>
 
   <script src="static/js/fontawesome.all.min.js"></script>
