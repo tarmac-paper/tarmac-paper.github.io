@@ -265,7 +265,7 @@ h3 {
 
 .overview-video-placeholder {
   position: relative;
-  max-width: 920px;
+  max-width: var(--text-width);
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid var(--line);
