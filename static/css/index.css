@@ -259,6 +259,55 @@ h3 {
   padding-top: 48px;
 }
 
+.overview-video-section {
+  padding-top: 28px;
+}
+
+.overview-video-placeholder {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.overview-video-placeholder img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(0.82) brightness(0.86);
+}
+
+.overview-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(15, 20, 22, 0.28);
+}
+
+.play-mark {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.play-mark .fa-play {
+  margin-left: 3px;
+}
+
 .taxonomy-section .teaser-figure {
   margin-bottom: 18px;
 }
