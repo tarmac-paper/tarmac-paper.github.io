@@ -309,6 +309,7 @@ h3 {
 }
 
 .taxonomy-section .teaser-figure {
+  max-width: var(--text-width);
   margin-bottom: 18px;
 }
 
