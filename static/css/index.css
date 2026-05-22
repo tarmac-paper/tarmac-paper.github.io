@@ -554,9 +554,37 @@ figcaption {
 }
 
 .resource-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  max-width: var(--max-width);
-  margin: 0 auto 22px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 640px;
+  margin: 0 auto 24px;
+  border-top: 1px solid var(--line);
+}
+
+.resource-grid .resource-tile {
+  justify-content: flex-start;
+  min-height: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 10px 0;
+  background: transparent;
+}
+
+.resource-grid .resource-tile:hover,
+.resource-grid .resource-tile:focus {
+  color: var(--accent);
+  background: transparent;
+}
+
+.resource-grid .resource-tile i {
+  width: 18px;
+  color: var(--muted);
+}
+
+.resource-grid .resource-tile:hover i,
+.resource-grid .resource-tile:focus i {
+  color: var(--accent);
 }
 
 .bibtex-panel {
@@ -657,8 +685,7 @@ pre {
 
   .primitive-grid,
   .gallery-grid,
-  .frame-strip,
-  .resource-grid {
+  .frame-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -707,8 +734,7 @@ pre {
   .hero-stills,
   .primitive-grid,
   .gallery-grid,
-  .frame-strip,
-  .resource-grid {
+  .frame-strip {
     grid-template-columns: 1fr;
   }
 
