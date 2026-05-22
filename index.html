@@ -53,7 +53,7 @@
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20260522-four-demos">
 
   <script type="application/ld+json">
   {
@@ -174,7 +174,7 @@
         <p class="eyebrow">Robotic demonstrations</p>
         <h2>Representative primitive instantiations</h2>
         <p>
-          The demonstrations span transfer, agitation, setup, recovery, embodiment transfer, and cleanup. They are
+          The four demonstrations span transfer, agitation, setup, recovery, embodiment transfer, and cleanup. They are
           presented as evidence for the action representation rather than benchmarks of a single robot platform.
         </p>
       </div>
@@ -205,6 +205,15 @@
           <div>
             <h3>Bimanual setup</h3>
             <p>Two Franka arms assemble a separating-funnel apparatus and recover from intermediate misalignment.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <video controls muted preload="metadata" poster="static/images/robotic-validation/broken_detection.png">
+            <source src="static/videos/experiment4.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3>Perception-guided cleanup</h3>
+            <p>Franka with a wrist-mounted depth camera detects and removes broken glass fragments from the workspace.</p>
           </div>
         </article>
       </div>
