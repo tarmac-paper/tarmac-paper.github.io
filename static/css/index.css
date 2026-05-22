@@ -185,6 +185,25 @@ h3 {
   background: var(--accent-soft);
 }
 
+.hero-copy .resource-actions {
+  gap: 16px;
+}
+
+.hero-copy .resource-button {
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: var(--accent);
+  background: transparent;
+}
+
+.hero-copy .resource-button:hover,
+.hero-copy .resource-button:focus {
+  color: var(--ink);
+  background: transparent;
+}
+
 .hero-showcase {
   display: grid;
   gap: 12px;
@@ -729,6 +748,15 @@ pre {
 
   .resource-button {
     width: 100%;
+  }
+
+  .hero-copy .resource-actions {
+    align-items: center;
+    gap: 12px 16px;
+  }
+
+  .hero-copy .resource-button {
+    width: auto;
   }
 
   .hero-stills,
