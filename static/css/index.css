@@ -380,6 +380,11 @@ figcaption {
   overflow: hidden;
 }
 
+.media-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .media-card video {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -403,6 +408,7 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 9px;
+  margin-top: auto;
   padding: 0 14px 14px;
 }
 
