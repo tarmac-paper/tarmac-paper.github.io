@@ -53,7 +53,7 @@
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="static/css/index.css?v=20260522-four-demos">
+  <link rel="stylesheet" href="static/css/index.css?v=20260522-demo-stills">
 
   <script type="application/ld+json">
   {
@@ -184,69 +184,82 @@
           <video controls muted preload="metadata" poster="static/images/robotic-validation/franka_single_arm.png">
             <source src="static/videos/experiment1.mp4" type="video/mp4">
           </video>
-          <div>
+          <div class="media-body">
             <h3>Single-arm execution</h3>
             <p>Franka validation of Tooling and Agitating primitives such as pouring, stirring, and shaking.</p>
+          </div>
+          <div class="media-stills" aria-label="Single-arm execution stills">
+            <figure>
+              <img src="static/images/robotic-validation/franka_pouring.jpg" alt="Franka pouring liquid into a beaker">
+              <figcaption>Single-arm transfer: Pouring</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/robotic-validation/franka_stirring.jpg" alt="Franka stirring liquid in a beaker">
+              <figcaption>Single-arm agitation: Stirring</figcaption>
+            </figure>
           </div>
         </article>
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/dobot_insert_stir_bar.jpg">
             <source src="static/videos/experiment2.mp4" type="video/mp4">
           </video>
-          <div>
+          <div class="media-body">
             <h3>Second embodiment</h3>
             <p>Dobot solution preparation spanning setup, execution, and cleanup.</p>
+          </div>
+          <div class="media-stills" aria-label="Dobot execution stills">
+            <figure>
+              <img src="static/images/robotic-validation/dobot_insert_stir_bar.jpg" alt="Dobot inserting a stir bar">
+              <figcaption>Dobot setup: Insertive-P</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/robotic-validation/dobot_stir_hotplate.jpg" alt="Dobot stirring solution on hotplate">
+              <figcaption>Dobot execution: Stirring</figcaption>
+            </figure>
           </div>
         </article>
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/bimanual_screwing.jpg">
             <source src="static/videos/experiment3.mp4" type="video/mp4">
           </video>
-          <div>
+          <div class="media-body">
             <h3>Bimanual setup</h3>
             <p>Two Franka arms assemble a separating-funnel apparatus and recover from intermediate misalignment.</p>
+          </div>
+          <div class="media-stills" aria-label="Bimanual setup stills">
+            <figure>
+              <img src="static/images/robotic-validation/bimanual_screwing.jpg"
+                alt="Two Franka arms securing a bosshead">
+              <figcaption>Bimanual setup: Rotational-C</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/robotic-validation/bimanual_recovery.jpg"
+                alt="Two Franka arms recovering a misaligned iron ring">
+              <figcaption>Recovery by recomposition</figcaption>
+            </figure>
           </div>
         </article>
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/broken_detection.png">
             <source src="static/videos/experiment4.mp4" type="video/mp4">
           </video>
-          <div>
+          <div class="media-body">
             <h3>Perception-guided cleanup</h3>
             <p>Franka with a wrist-mounted depth camera detects and removes broken glass fragments from the workspace.</p>
           </div>
+          <div class="media-stills" aria-label="Perception-guided cleanup stills">
+            <figure>
+              <img src="static/images/robotic-validation/broken_detection.png"
+                alt="Object detection output for broken glass fragments">
+              <figcaption>Perception-guided detection</figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/robotic-validation/broken_remove_fragment.jpg"
+                alt="Robot removing a broken glass fragment">
+              <figcaption>Cleanup: Transitional-P</figcaption>
+            </figure>
+          </div>
         </article>
-      </div>
-
-      <div class="frame-strip">
-        <figure>
-          <img src="static/images/robotic-validation/dobot_insert_stir_bar.jpg" alt="Dobot inserting a stir bar">
-          <figcaption>Dobot setup: Insertive-P</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/robotic-validation/dobot_stir_hotplate.jpg" alt="Dobot stirring solution on hotplate">
-          <figcaption>Dobot execution: Stirring</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/robotic-validation/bimanual_screwing.jpg"
-            alt="Two Franka arms securing a bosshead">
-          <figcaption>Bimanual setup: Rotational-C</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/robotic-validation/bimanual_recovery.jpg"
-            alt="Two Franka arms recovering a misaligned iron ring">
-          <figcaption>Recovery by recomposition</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/robotic-validation/broken_detection.png"
-            alt="Object detection output for broken glass fragments">
-          <figcaption>Perception-guided cleanup</figcaption>
-        </figure>
-        <figure>
-          <img src="static/images/robotic-validation/broken_remove_fragment.jpg"
-            alt="Robot removing a broken glass fragment">
-          <figcaption>Cleanup: Transitional-P</figcaption>
-        </figure>
       </div>
     </section>
 
