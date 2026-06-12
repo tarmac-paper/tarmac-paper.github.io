@@ -53,7 +53,7 @@
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="static/css/index.css?v=20260522-demo-stills-align">
+  <link rel="stylesheet" href="static/css/index.css?v=20260612-overview-hidden">
 
   <script type="application/ld+json">
   {
@@ -139,15 +139,21 @@
           </figcaption>
         </figure>
         <div class="hero-stills" aria-label="Additional robotic validation frames">
-          <img src="static/images/robotic-validation/dobot_stir_hotplate.jpg"
-            alt="Dobot robot stirring solution on a hotplate">
-          <img src="static/images/robotic-validation/broken_detection.png"
-            alt="Object detection output for broken glass fragments">
+          <figure>
+            <img src="static/images/robotic-validation/dobot_stir_hotplate.jpg"
+              alt="Dobot robot stirring solution on a hotplate">
+            <figcaption>Dobot validation setup for hotplate stirring in a laboratory workspace.</figcaption>
+          </figure>
+          <figure>
+            <img src="static/images/robotic-validation/broken_detection.png"
+              alt="Object detection output for broken glass fragments">
+            <figcaption>Perception output localizes broken-glass fragments for cleanup.</figcaption>
+          </figure>
         </div>
       </div>
     </header>
 
-    <section class="section-block overview-video-section" id="overview-video">
+    <section class="section-block overview-video-section" id="overview-video" hidden>
       <div class="section-heading">
         <p class="eyebrow">Overview video</p>
         <h2>Project introduction</h2>
@@ -182,7 +188,7 @@
       <div class="media-grid">
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/franka_single_arm.png">
-            <source src="static/videos/experiment1.mp4" type="video/mp4">
+            <source src="static/videos/experiment1-web.mp4" type="video/mp4">
           </video>
           <div class="media-body">
             <h3>Single-arm execution</h3>
@@ -201,7 +207,7 @@
         </article>
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/dobot_insert_stir_bar.jpg">
-            <source src="static/videos/experiment2.mp4" type="video/mp4">
+            <source src="static/videos/experiment2-web.mp4" type="video/mp4">
           </video>
           <div class="media-body">
             <h3>Second embodiment</h3>
@@ -220,7 +226,7 @@
         </article>
         <article class="media-card">
           <video controls muted preload="metadata" poster="static/images/robotic-validation/bimanual_screwing.jpg">
-            <source src="static/videos/experiment3.mp4" type="video/mp4">
+            <source src="static/videos/experiment3-web.mp4" type="video/mp4">
           </video>
           <div class="media-body">
             <h3>Bimanual setup</h3>
